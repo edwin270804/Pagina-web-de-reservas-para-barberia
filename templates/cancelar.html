@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cancelar cita</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #111;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            color: #d4af37;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            background: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>💈 Cancelar cita</h1>
+
+    <p><strong>Cliente:</strong> {{ cita.nombre }}</p>
+    <p><strong>Fecha:</strong> {{ cita.fecha }}</p>
+    <p><strong>Hora:</strong> {{ cita.hora }}</p>
+    <p><strong>Barbero:</strong> {{ cita.barbero }}</p>
+
+    <form action="/confirmar_cancelacion/{{ token}}" method="POST">
+        <button class="btn">Cancelar cita ❌</button>
+    </form>
+</div>
+
+</body>
+</html>

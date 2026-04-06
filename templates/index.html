@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="description" content="Jr Barbershop - Cortes modernos, clásicos y atención personalizada en Rivas, Nicaragua">
+    <title>Jr Barbershop 💈</title>
+
+    
+    <link rel="icon" href="/static/recursos/barber.ico" type="image/png">
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <img src="/static/recursos/Gemini_Generated_Image_cidkjscidkjscidk-removebg-preview.jpeg" alt="Logo Jr Barbershop">
+                <span>Jr BarberShop 💈</span>
+            </div>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#mi-arte">Mi arte</a></li>
+                <li><a href="#reservas" class="btn-nav">Reservar</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="reveal-left">Jr BarberShop 💈</h1>
+            <p class="reveal-right">Estilo moderno, precisión y experiencia premium</p>
+
+            <a href="#reservas" class="btn-principal reveal-left">
+                Reservar Ahora
+            </a>
+        </div>
+    </header>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="box">
+
+            <div class="texto reveal-left">
+                <h2>Estilo, Precisión y Actitud</h2>
+                <p>
+                    Soy Erick, barbero profesional especializado en cortes modernos y clásicos.
+                    Cada cliente es una experiencia única.
+                </p>
+
+                <a href="#reservas" class="btn-principal">
+                    Reservar Cita 💈
+                </a>
+            </div>
+
+            <div class="imagen reveal-right">
+                <img 
+                    src="{{ url_for('static', filename='recursos/WhatsApp Image 2026-01-13 at 3.00.14 PM.jpeg') }}" 
+                    alt="Barbero trabajando"
+                    loading="lazy"
+                >
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios">
+
+        <h2 class="reveal-left">Catálogo de Estilos 💈</h2>
+        <p class="subtitulo reveal-right">
+            Calidad, Estilo y Atención Personalizada
+        </p>
+
+        <div class="cards">
+
+            <article class="card reveal-left">
+                <h3>Corte Clásico</h3>
+                <p>Estilo tradicional y limpio</p>
+                <span>C$ 70</span>
+            </article>
+
+            <article class="card reveal-right">
+                <h3>Fade Moderno</h3>
+                <p>Degradado detallado</p>
+                <span>C$ 100</span>
+            </article>
+
+            <article class="card reveal-left">
+                <h3>Barba</h3>
+                <p>Perfilado profesional</p>
+                <span>C$ 30</span>
+            </article>
+
+            <article class="card reveal-right">
+                <h3>Corte + Barba</h3>
+                <p>Combo completo</p>
+                <span>C$ 130</span>
+            </article>
+
+        </div>
+
+        <a href="#reservas" class="btn-principal reveal-left">
+            Reservar Ahora
+        </a>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+        <div class="container">
+
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3910.449975656767!2d-85.90523092494821!3d11.44741198874507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDI2JzUwLjciTiA4NcKwNTQnMDkuNiJX!5e0!3m2!1ses!2sni"
+                    loading="lazy"
+                ></iframe>
+            </div>
+
+            <div class="info">
+
+                <h2>Contacto</h2>
+
+                <div class="grid">
+
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>El Palmar, Rivas</p>
+                        <p>Rivas, Nicaragua</p>
+                    </div>
+
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>+505 8817 4159</p>
+                    </div>
+
+                    <div>
+                        <h3>Horario</h3>
+                        <p>Lunes-Viernes: 12:00PM - 5:00PM</p>
+                        <p>Sábado-Domingo: 9:00AM - 5:00PM</p>
+                    </div>
+
+                    <div>
+                        <h3>Redes</h3>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/erick.junior.436609" target="_blank" class="fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/erickjuniorperez10" target="_blank" class="ig">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="https://wa.me/50588174159" target="_blank" class="wa">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="opiniones">
+
+        <h2 class="subtitulo-opinion2">Opiniones de clientes 💈</h2>
+
+        <div class="opiniones-container">
+
+            <!-- FORM -->
+            <div class="form-testimonio">
+
+                <h3 class="subtitulo-opinion1">Deja tu Opinión</h3>
+
+                <div class="form-box">
+
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                    <textarea id="comentario" placeholder="¿Cómo fue tu experiencia?"></textarea>
+
+                    <div class="rating" id="rating">
+                        <i class="fa-star fa-regular" data-value="1"></i>
+                        <i class="fa-star fa-regular" data-value="2"></i>
+                        <i class="fa-star fa-regular" data-value="3"></i>
+                        <i class="fa-star fa-regular" data-value="4"></i>
+                        <i class="fa-star fa-regular" data-value="5"></i>
+                    </div>
+
+                    <button onclick="enviarTestimonio()">Enviar</button>
+
+                    <div id="mensaje-testimonio" class="mensaje"></div>
+
+                </div>
+            </div>
+
+            <!-- TESTIMONIOS -->
+            <div class="testimonio">
+
+                <h3 class="titulo-principal">Lo que dicen de nosotros</h3>
+
+                <div class="carrusel-wrapper">
+                    <div class="carrusel">
+                        <div class="carrusel-track" id="track"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS al final (mejor rendimiento) -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
